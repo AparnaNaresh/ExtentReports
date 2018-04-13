@@ -12,7 +12,7 @@ public class ToolTip extends TestBase {
 	{
 		t.clicktooltip();
 		t.tooltipfunction();
-		
+		System.out.println("Aparna");
 		
 	}
 	
