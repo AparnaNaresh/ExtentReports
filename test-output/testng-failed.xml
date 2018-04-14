@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="selenium.ToolTip">
+      <class name="pages.DatePickerPage">
         <methods>
+          <include name="selectDatePicker"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="closereport"/>
-          <include name="tooltiptest"/>
           <include name="beforeMethod"/>
           <include name="loadproperties"/>
         </methods>
-      </class> <!-- selenium.ToolTip -->
+      </class> <!-- pages.DatePickerPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

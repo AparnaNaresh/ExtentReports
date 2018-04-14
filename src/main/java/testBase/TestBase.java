@@ -80,9 +80,9 @@ public  ExtentTest test;
  {
 	 if(result.getStatus()==ITestResult.SUCCESS)
 	 {
-		 // String screenshot = TakeScreenshot.takeScreenshot();
+		 String screenshot = TakeScreenshot.takeScreenshot();
 		  test.log(LogStatus.INFO, result.getName());
-		// test.log(LogStatus.PASS, test.addScreenCapture(screenshot));
+		 test.log(LogStatus.PASS, test.addScreenCapture(screenshot));
 	 }
 	 	
 	 else if(result.getStatus()==ITestResult.FAILURE)
@@ -100,7 +100,7 @@ public  ExtentTest test;
  @AfterSuite
  public void closereport()
  {
-	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
 	 extent.flush();
 	 extent.close();
 	 driver.quit();
