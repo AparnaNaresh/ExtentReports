@@ -82,7 +82,7 @@ public  ExtentTest test;
 	 {
 		 String screenshot = TakeScreenshot.takeScreenshot();
 		  test.log(LogStatus.INFO, result.getName());
-		 test.log(LogStatus.PASS, test.addScreenCapture(screenshot));
+		  test.log(LogStatus.PASS, test.addScreenCapture(screenshot));
 	 }
 	 	
 	 else if(result.getStatus()==ITestResult.FAILURE)
